@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/box.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        margin: 10px auto;
+   
+        
+        justify-content: center;
+
+    }
+
+    *{
+        margin: 0;padding: 0;
+    }
+
+    .box{
+        height: 200px;
+        width: 300px;
+        border: 1px solid black;
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        gap: 20px;
+        background-color: rgb(148, 139, 139);
+        cursor: pointer;
+
+       
+    }
+    
+
+    .box:hover{
+        background-color: pink;
+        border-radius: 20px;
+        transition: 3s;
+    }
+    img{
+    height: 40px;
+    width: 40px;
+}
+
+p{
+    text-align: justify;
+}
+
+    @media screen and (max-width:700px)  {
+
+        .main{
+            grid-template-columns: auto auto auto ;
+
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+        }
+        
+
+        
+    }
+
+    
+    @media screen and (max-width:600px)  {
+
+.main{
+    grid-template-columns: auto auto ;
+
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+}
+</style></head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="./box_files/4443113.png">
+            <h3>Mobile App devlopment</h3>
+            <p>Ensuring your gloabal reach via mobility lovers</p>
+        </div>
+        <div class="box">
+            <img src="./box_files/1927656.png">
+            <h3>Mobile App devlopment</h3>
+            <p>Creating Web Persoanlity &amp; Brand out of a organization!</p><p>
+       
+        </p></div>
+        <div class="box">
+            <img src="./box_files/510943.png">
+            <h3>Infastrcuture management</h3>
+            <p>Maintainig infastructure lifecycle through plan-build-run-monitor approach</p>
+        </div>
+        <div class="box">
+            <img src="./box_files/2329087.png">
+            <h3>Enterprise Mobility</h3>
+            <p>Customized EAS that stramlines the workflow</p> 
+        </div>
+        <div class="box">
+            <img src="./box_files/1256936.png">
+            <h3>Virtualization Solution</h3>
+            <p>Convertin IT solution in low cost. Purpose build system</p>
+        </div>
+        <div class="box">
+            <img src="./box_files/2767144.png">
+            <h3>Cloud Computing</h3>
+            <p>Scalable cloud computing that servers valid data across verticals</p>
+        </div>
+        <div class="box">
+            <img src="./box_files/4749988.png">
+            <h3>Big Data Solution</h3>
+            <p>Ideal Predictive Analysis for Value-Based Differentiation</p>
+       
+        </div>
+        <div class="box">
+            <img src="./box_files/46737.png">
+            <h3>IOT Solution</h3>
+            <p>Adapting dynamic technologies to design innovative business processes</p>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
